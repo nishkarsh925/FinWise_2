@@ -1,0 +1,232 @@
+body{
+    background: url('background.jpg');
+ 
+}
+.custom-navbar {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(6px);
+    height: 70px;
+    position: relative;
+    z-index: 1000; /* Ensures navbar is above the carousel */
+}
+
+/* Carousel with lower z-index */
+.carousel {
+    position: relative;
+    z-index: 1; /* Carousel will stay behind the navbar */
+}
+@media (max-width:400px) {
+    
+    
+    
+}
+  .custom-navbar .navbar-nav .nav-link {
+    color: rgb(252, 1, 231); /* Text color */
+    font-size: 20px; /* Font size */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    ;
+  }
+
+  .custom-navbar .navbar-nav .nav-link:hover {
+    color: #f0f0f0; /* Hover effect */
+  }
+
+  /* Flexbox for even spacing and center alignment */
+  .custom-nav {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly */
+    width: 50%; /* Adjust the width to control spacing */
+  }
+
+  /* Navbar responsiveness */
+  @media (max-width: 768px) {
+    .custom-nav {
+      width: 100%; /* Full width on small screens */
+      background-color: #31047aa9;
+    }
+    .nav-link {
+      text-align: center; /* Center-align text on small screens */
+      margin: 5px 0; /* Margin for better spacing on small screens */
+      background-color: #31047aa9;
+    }
+  }
+  .wrapper {
+    height: 10vh;
+    /*This part is important for centering*/
+    display: grid;
+    place-items: center;
+    color: rgba(234, 0, 255, 0.801);
+  }
+  
+  .typing-demo {
+    width: 22ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+  .neon-button {
+    background: #000;
+    color: #fa0ac6;
+    border: 2px solid #fa0ac6;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    transition: 0.3s;
+    box-shadow: 0 0 5px #fa0ac6;
+    text-decoration: none;
+    position: relative;
+    top: 11px;
+}
+
+.neon-button::before,
+.neon-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background: linear-gradient(45deg, rgba(0,255,255,0.4), rgba(0,255,255,0.2));
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.neon-button::before {
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.neon-button::after {
+    filter: blur(10px);
+    z-index: -2;
+}
+
+.neon-button:hover {
+    color: #fa0ac6;
+    border-color: #fa0ac6;
+}
+
+.neon-button:hover::before,
+.neon-button:hover::after {
+    opacity: 1;
+}
+.he{
+    text-align: center;
+    color: black;
+    font-size: 70px;
+    
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    text-shadow: 
+        0 0 5px #fa0ac6, /* Blue glow */
+        0 0 5px #fa0ac6,
+        0 0 5px #fa0ac6, /* Cyan glow */
+        0 0 5px #fa0ac6,
+        0 0 5px #fa0ac6,
+        0 0 5px #fa0ac6,
+        0 0 5px #fa0ac6;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.form-container, .contact-info {
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+    backdrop-filter: blur(6px);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    flex: 1;
+    min-width: 300px;
+    color: #fa0ac6;
+}
+
+.form-container h2, .contact-info h2 {
+    margin-top: 0;
+    
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #fa0ac6;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+    backdrop-filter: blur(6px);
+}
+
+.submit-btn {
+    background-color: #fa0ac6;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #fa0ac6;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    color: #fa0ac6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-form {
+        flex-direction: column;
+    }
+}

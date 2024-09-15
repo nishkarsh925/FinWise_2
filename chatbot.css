@@ -1,0 +1,135 @@
+body{
+    background: url('background.jpg');
+ 
+}
+.custom-navbar {
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+    backdrop-filter: blur(6px);
+    height: 70px;
+  }
+
+  .custom-navbar .navbar-nav .nav-link {
+    color: rgb(252, 1, 231); /* Text color */
+    font-size: 20px; /* Font size */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    ;
+  }
+
+  .custom-navbar .navbar-nav .nav-link:hover {
+    color: #f0f0f0; /* Hover effect */
+  }
+
+  /* Flexbox for even spacing and center alignment */
+  .custom-nav {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly */
+    width: 50%; /* Adjust the width to control spacing */
+  }
+
+  /* Navbar responsiveness */
+  @media (max-width: 768px) {
+    .custom-nav {
+      width: 100%; /* Full width on small screens */
+    }
+    .nav-link {
+      text-align: center; /* Center-align text on small screens */
+      margin: 5px 0; /* Margin for better spacing on small screens */
+    }
+  }
+  .wrapper {
+    height: 10vh;
+    /*This part is important for centering*/
+    display: grid;
+    place-items: center;
+    color: rgba(234, 0, 255, 0.801);
+  }
+  
+  .typing-demo {
+    width: 22ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+  body {
+    background: url('images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.custom-navbar {
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+    backdrop-filter: blur(6px);
+    height: 70px;
+}
+
+.custom-navbar .navbar-nav .nav-link {
+    color: rgb(252, 1, 231); /* Text color */
+    font-size: 20px; /* Font size */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.custom-navbar .navbar-nav .nav-link:hover {
+    color: #f0f0f0; /* Hover effect */
+}
+
+.custom-nav {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly */
+    width: 50%; /* Adjust the width to control spacing */
+}
+
+@media (max-width: 768px) {
+    .custom-nav {
+        width: 100%; /* Full width on small screens */
+    }
+    .nav-link {
+        text-align: center; /* Center-align text on small screens */
+        margin: 5px 0; /* Margin for better spacing on small screens */
+    }
+}
+
+.wrapper {
+    height: 10vh;
+    display: grid;
+    place-items: center;
+    color: rgba(234, 0, 255, 0.801);
+}
+
+.typing-demo {
+    width: 22ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
